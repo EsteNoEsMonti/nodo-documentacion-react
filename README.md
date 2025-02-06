@@ -2,7 +2,7 @@ Welcome file
 
 # Guía Completa de React
 
-### ¿Qué significa ser un programador front-end?
+## ¿Qué significa ser un programador front-end?
 
 Un programador front-end es quien crea la parte visible e interactiva de una aplicación web o móvil. Su trabajo consiste en traducir diseños y conceptos en interfaces funcionales, atractivas y optimizadas para los usuarios finales. Este rol combina habilidades técnicas, creatividad y un profundo entendimiento de las necesidades de los usuarios.
 
@@ -10,7 +10,7 @@ El programador front-end actúa como puente entre los diseñadores y los desarro
 
 ----------
 
-### Día a día de un programador front-end
+## Día a día de un programador front-end
 
 1.  Inicio del día: Planificación y comunicación
 
@@ -62,9 +62,9 @@ El programador front-end actúa como puente entre los diseñadores y los desarro
 
 ----------
 
-### Habilidades necesarias para ser un buen desarrollador front-end
+## Habilidades necesarias para ser un buen desarrollador front-end
 
-#### Habilidades duras (técnicas):
+### Habilidades duras (técnicas):
 
 1.  Lenguajes esenciales:
 
@@ -108,7 +108,7 @@ El programador front-end actúa como puente entre los diseñadores y los desarro
 -   Pruebas con Jest, Cypress, Testing Library.
     
 
-#### Habilidades blandas:
+### Habilidades blandas:
 
 1.  Comunicación efectiva:
 
@@ -151,7 +151,7 @@ El programador front-end actúa como puente entre los diseñadores y los desarro
 
 ----------
 
-### Desafíos de un desarrollador front-end
+## Desafíos de un desarrollador front-end
 
 1.  Mantenerse actualizado con la constante evolución de herramientas y frameworks.
     
@@ -164,15 +164,15 @@ El programador front-end actúa como puente entre los diseñadores y los desarro
 
 ----------
 
-### En resumen:
+## En resumen:
 
 Un desarrollador front-end en 2024/2025 no solo escribe código; crea experiencias. Debe ser técnico, creativo, colaborador y siempre estar dispuesto a aprender. Es un rol que combina el arte de diseñar con la ciencia de construir, siempre poniendo al usuario en el centro de cada decisión.
 
-## Introducción a React
+# Introducción a React
 
 React es una biblioteca de JavaScript diseñada para construir interfaces de usuario interactivas y dinámicas. Fue desarrollada por Facebook y lanzada en 2013. Su enfoque principal es hacer que el desarrollo de aplicaciones complejas sea más organizado y eficiente.
 
-### Características principales de React
+## Características principales de React
 
 -   Declarativa: Describe lo que quieres mostrar en lugar de cómo hacerlo, simplificando el flujo de desarrollo.
     
@@ -183,7 +183,7 @@ React es una biblioteca de JavaScript diseñada para construir interfaces de usu
 -   Unidireccionalidad de datos: La comunicación fluye desde los componentes padres hacia los hijos, haciendo que el estado y las propiedades sean más predecibles.
     
 
-### ¿Por qué React es popular?
+## ¿Por qué React es popular?
 
 -   Fácil de aprender para quienes conocen JavaScript.
     
@@ -191,6 +191,121 @@ React es una biblioteca de JavaScript diseñada para construir interfaces de usu
     
 -   Flexibilidad para integrarse con otras herramientas y bibliotecas.
     
+
+----------
+
+## 🚀 Creación de un Proyecto React con Vite
+
+Vite es una herramienta de construcción rápida para proyectos frontend. Nos permite configurar un proyecto de React de manera rápida y optimizada.
+
+---
+
+### 🛠️ Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- [Node.js](https://nodejs.org/) (versión 16 o superior recomendada)
+- npm (que viene incluido con Node.js)
+
+Puedes verificar si están instalados ejecutando:
+
+```sh
+node -v
+npm -v
+```
+Si ambos comandos devuelven una versión, estás listo para continuar.
+
+### 🔧 Paso a Paso: Creando un Proyecto React con Vite
+#### 1️⃣ Abrir la Terminal
+Abre la terminal en la ubicación donde deseas crear tu proyecto.
+
+#### 2️⃣ Ejecutar el Comando de Creación
+Ejecuta el siguiente comando:
+
+```sh
+npm create vite@latest
+```
+
+## 🔍 Explicación del comando:
+
+**npm**: Es el gestor de paquetes de Node.js.  
+**create**: Indica que vamos a crear un nuevo proyecto.  
+**vite@latest**: Especifica que vamos a usar la última versión de Vite para la creación del proyecto.
+
+### 3️⃣ Configurar el Proyecto
+Tras ejecutar el comando, la terminal te pedirá que ingreses un nombre para tu proyecto. Escribe el nombre deseado (por ejemplo, ``mi-proyecto-vite``) y presiona Enter.
+
+Luego, te pedirá que selecciones el framework. Usa las flechas del teclado para elegir ``React`` y presiona ``Enter``.
+
+A continuación, te pedirá que selecciones una variante de JavaScript:
+
+``JavaScript`` (JS puro)  
+``TypeScript`` (con soporte de TypeScript)  
+
+Selecciona la opción de ``JavaScript``
+
+### 4️⃣ Acceder al Proyecto
+Una vez creado el proyecto, entra en la carpeta del mismo con:
+
+```sh
+cd mi-proyecto-vite
+```
+(Recuerda reemplazar mi-proyecto-vite con el nombre de tu proyecto).
+
+### 5️⃣ Instalar Dependencias
+Ahora instala las dependencias con:
+```sh
+npm install
+```
+#### 🔍 Explicación del comando:
+
+``npm install`` o ``npm i``: Descarga e instala todas las dependencias necesarias para el proyecto.
+
+### 6️⃣ Ejecutar el Proyecto
+Para iniciar el servidor de desarrollo y ver tu aplicación en el navegador, usa:
+
+```sh
+npm run dev
+```
+#### 🔍 Explicación del comando:
+
+``npm run dev``: Inicia el servidor de desarrollo de Vite y te proporciona una URL (generalmente ``http://localhost:5173``) para visualizar la aplicación.
+
+### 🎉 ¡Listo! Tu Proyecto React con Vite está Funcionando
+Ahora puedes comenzar a desarrollar tu aplicación en el directorio ``src/``, donde encontrarás el archivo ``App.jsx`` (o ``App.tsx`` si elegiste TypeScript).
+
+Para detener el servidor de desarrollo, presiona ``Ctrl + C`` en la terminal.
+
+---
+# 📁 Estructura del Proyecto
+Al crear el proyecto, se generarán varios archivos y carpetas:
+ ```php
+ mi-proyecto-vite/
+├── node_modules/      # Dependencias instaladas
+├── public/            # Archivos estáticos
+├── src/               # Código fuente del proyecto
+│   ├── App.jsx        # Componente principal
+│   ├── main.jsx       # Punto de entrada de la app
+│   ├── index.css      # Estilos globales
+│   └── assets/        # Carpeta para imágenes u otros recursos
+├── .gitignore         # Archivos ignorados por Git
+├── index.html         # Archivo HTML principal
+├── package.json       # Información y dependencias del proyecto
+├── vite.config.js     # Configuración de Vite
+└── README.md          # Archivo de documentación del proyecto
+ ```
+Con esto, ya tienes una base sólida para comenzar a desarrollar en React con Vite. 🚀✨
+
+## 📌 Comandos Útiles en el Proyecto
+
+| Comando           | Descripción |
+|------------------|-------------|
+| `npm install`    | Instala las dependencias del proyecto |
+| `npm run dev`    | Inicia el servidor de desarrollo |
+| `npm run build`  | Genera una versión optimizada para producción |
+| `npm run preview` | Sirve la aplicación para probar la versión de producción |
+
+¡Ahora puedes comenzar a construir tu aplicación React con Vite de forma rápida y eficiente! 🚀🎨
 
 ----------
 
